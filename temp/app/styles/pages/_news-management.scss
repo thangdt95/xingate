@@ -1,0 +1,144 @@
+.news-management {
+    background-color: #eeeeee;
+  }
+  
+  .news-management-header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 40px;
+  
+    &__view {
+      width: 130px;
+      border-bottom: 1px solid $cl-grey-4;
+      cursor: pointer;
+      padding: 8px 0;
+      border-right: 1px solid $cl-grey-4;
+    }
+  
+    .section-category__dropdown {
+      width: auto;
+      min-width: 130px;
+    }
+  
+    &__left {
+      display: flex;
+      align-items: flex-end;
+    }
+  
+    &__search-wrapper {
+      position: relative;
+      border-bottom: 1px solid $cl-grey-4;
+    }
+  
+    &__search-input {
+      border: 0;
+      width: 450px;
+      margin-right: 8px;
+      text-align: right;
+      background: transparent;
+      padding: 8px 0;
+  
+      &::placeholder {
+        color: $cl-grey-3;
+      }
+    }
+  
+    &__search-icon {
+      color: $cl-grey-2;
+      font-size: 18px;
+    }
+  }
+  
+  .news-management-table {
+    .table {
+      margin: 0;
+      margin-bottom: 20px;
+      background-color: $cl-white;
+  
+  
+      thead tr th {
+        vertical-align: middle;
+        font-weight: bold;
+      }
+  
+      th {
+        position: relative;
+      }
+  
+      td {
+        border-top: none;
+        white-space: normal;
+        position: relative;
+      }
+  
+      tbody {
+        tr {
+          border-bottom: 1px solid $cl-grey-5;
+  
+          &:last-child {
+            border-bottom: 0;
+          }
+  
+          &:hover {
+            background: $cl-grey-6;
+            .news-management-table__setting {
+              display: block;
+            }
+          }
+        }
+      }
+  
+      thead {
+        background: $cl-grey-6;
+  
+        th {
+          border-bottom: 1px solid $cl-grey-6;
+        }
+      }
+    }
+  
+    &__setting {
+      position: absolute;
+      top: 7px;
+      right: 15px;
+      display: none;
+    }
+  
+    &__edit {
+      color: $cl-grey-4;
+      cursor: pointer;
+  
+      &:hover {
+        color: $cl-red;
+      }
+    }
+  
+    &__more {
+      cursor: pointer;
+  
+      &:hover {
+        color: $cl-red;
+      }
+    }
+  
+    .txt-blue {
+      color: #4a90e2;
+      font-weight: bold;
+    }
+  
+    .txt-yellow {
+      color: #ffab00;
+      font-weight: bold;
+    }
+  
+    .txt-red {
+      color: #d70000;
+      font-weight: bold;
+    }
+  
+    .txt-lightgrey {
+      color: $cl-grey-2;
+    }
+}

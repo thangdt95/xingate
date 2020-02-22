@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SCB</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Description"/>
+    <meta name="keywords" content="Description"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/reset.css"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
+  </head>
+  <body>
+    <div class="news-management">
+      <div class="news-center-header"></div>
+      <div class="container">
+        <div class="news-creating">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="news-creating__block">
+                <div class="news-creating__title">INFORMATION</div>
+                <div class="news-creating__wrapper">
+                  <p class="d-block">TITLE<span class="txt-red">*</span></p>
+                  <input class="form-control news-creating__input" type="text">
+                </div>
+                <div class="news-creating__wrapper">
+                  <p class="d-block">CATEGORY</p>
+                  <select class="form-control">
+                    <option>demo</option>
+                    <option>demo 2</option>
+                    <option>demo 3</option>
+                  </select>
+                </div>
+                <div class="news-creating__wrapper">
+                  <p class="d-block">SHORT DESCRIPTION<span class="txt-red">*</span></p>
+                  <input class="form-control news-creating__input" type="text">
+                </div>
+                <div class="news-creating__wrapper">
+                  <p class="d-block">VIEWER</p>
+                  <textarea class="form-control news-creating__textarea" placeholder="Nhập tên hoặc địa chỉ email"></textarea>
+                </div>
+                <div class="news-creating__wrapper">
+                  <p class="d-block">CONTENT<span class="txt-red">*</span></p>
+                  <textarea class="form-control news-creating__textarea"></textarea>
+                  <div class="text-right mt-4">
+                    <button class="button button--rectangle button--outline">PREVIEW</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="news-creating__block">
+                <div class="news-creating__title">PUBLISH TIME</div>
+                <div class="mb-3">
+                  <p>PUBLISH ON</p>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1"><span>IMMEDIATELY</span>
+                    </label>
+                  </div>
+                  <div class="radio mb-0">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                    </label>
+                  </div>
+                  <div class="d-flex">
+                    <input class="form-control news-creating__date input-datepicker-container" type="text">
+                    <select class="form-control news-creating__hour">
+                      <option>00</option>
+                      <option>demo 2</option>
+                      <option>demo 3</option>
+                    </select>
+                    <input class="form-control news-creating__minute" type="text">
+                  </div>
+                </div>
+                <p>TILL</p>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optionsRadios2" id="optionsRadios1" value="option1"><span>NO EXPIRED</span>
+                  </label>
+                </div>
+                <div class="radio mb-0">
+                  <label>
+                    <input type="radio" name="optionsRadios2" id="optionsRadios2" value="option2">
+                  </label>
+                </div>
+                <div class="d-flex">
+                  <input class="form-control news-creating__date input-datepicker-container" type="text">
+                  <select class="form-control news-creating__hour">
+                    <option>00</option>
+                    <option>demo 2</option>
+                    <option>demo 3</option>
+                  </select>
+                  <input class="form-control news-creating__minute" type="text">
+                </div>
+              </div>
+              <div class="news-creating__block">
+                <div class="news-creating__title">TAGS</div>
+                <textarea class="form-control news-creating__textarea" placeholder="Add your tags"></textarea><span class="d-block mt-2">Please enter or , to add tag</span>
+              </div>
+              <div class="news-creating__block">
+                <div class="news-creating__title">THUMBNAILS</div>
+                <p>UPLOAD</p>
+                <div class="news-creating__upload">
+                  <div class="text-center">
+                    <p class="fa fa-upload"></p>
+                    <p>Drag a file here</p>
+                  </div>
+                </div>
+                <div class="news-creating__upload-btn">
+                  <input type="file" id="exampleInputFile">
+                  <button class="button button--rectangle button--outline">Browse File</button>
+                  <p class="news-creating__upload-notice">No file chosen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-creating__block">
+            <div class="news-creating__title">PREVIEW</div><span>Thay đổi tên gọi và địa điểm...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 col-xs-8">
+            <ul class="d-flex footer-top__ul">
+              <li class="footer-top__item"><a class="footer-top__link" href="#!">GIỚI THIỆU</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="#!">NHÀ ĐẦU TƯ</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="#!">TIN TỨC</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="#!">MẠNG LƯỚI</a></li>
+              <li class="footer-top__item footer-top__item--last"><a class="footer-top__link" href="#!">TUYỂN DỤNG</a></li>
+              <li class="footer-top__item footer-top__item--last"><a class="footer-top__link" href="#!">LIÊN HỆ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-4">
+            <div class="footer-top__sns d-flex">
+              <div class="footer-top__sns-item"><span class="fa fa-facebook-f"></span></div>
+              <div class="footer-top__sns-item"><span class="fa fa-youtube"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-center">
+      <div class="container">
+        <div class="row">
+          <div class="footer-center__block col-md-3 col-sm-6">
+            <div class="footer-center__title">/ Khách hàng cá nhân</div>
+            <ul>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tôi muốn</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tài khoản</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tiền gửi</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tiền vay</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Chuyển tiền quốc tế</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Sản phẩm dịch vụ</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Sản phẩm liên kết</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Chính sách</a></li>
+            </ul>
+          </div>
+          <div class="footer-center__block col-md-3 col-sm-6">
+            <div class="footer-center__title">/ Khách hàng doanh nghiệp</div>
+            <ul>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tôi muốn</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tài khoản</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tiền gửi</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tiền vay</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Chuyển tiền quốc tế</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Sản phẩm dịch vụ</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Sản phẩm liên kết</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Chính sách</a></li>
+            </ul>
+          </div>
+          <div class="footer-center__block col-md-3 col-sm-6">
+            <div class="mb-20">
+              <div class="footer-center__title">/ Thẻ & Ngân hàng điện tử</div>
+              <ul>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ cá nhân</a></li>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ doanh nghiệp</a></li>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Ngân hàng điện tử</a></li>
+              </ul>
+            </div>
+            <div class="footer-center__title">/ Chương trình khuyến mãi</div>
+            <ul>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Khách hàng cá nhân</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Khách hàng doanh nghiệp</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Ưu đãi chủ thẻ</a></li>
+            </ul>
+          </div>
+          <div class="footer-center__block col-md-3 col-sm-6">
+            <div class="mb-20">
+              <div class="footer-center__title">/ Thẻ & Ngân hàng điện tử</div>
+              <ul>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ cá nhân</a></li>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ doanh nghiệp</a></li>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Ngân hàng điện tử</a></li>
+              </ul>
+            </div>
+            <div class="footer-center__title">/ Chương trình khuyến mãi</div>
+            <ul>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Khách hàng cá nhân</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Khách hàng doanh nghiệp</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Ưu đãi chủ thẻ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__title">NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN SÀI GÒN</div>
+      <p class="footer-bottom__contact">Hội sở: 927 Trần Hưng Đạo, Phường 1, Quận 5, Tp. HCM - Điện thoại: (028) 39230 666 - Fax: (028) 39225 888</p><span>SWIFT Code: SACLVNVX</span>
+    </div>
+    <script src="scripts/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/popper.js/dist/umd/popper.min.js"></script>
+    <script src="scripts/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="scripts/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script src="scripts/main.js"></script>
+  </footer>
+</html>

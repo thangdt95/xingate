@@ -1,0 +1,99 @@
+include ../modules/head/head
+include ../modules/footer/footer
+include ../modules/nav/nav
+include ../modules/button/button
+include ../modules/newsletter/newsletter
+
+doctype html
+html
+  +head
+  body
+    .news-management
+      .news-center-header
+      .container
+        .news-creating
+          .row
+            .col-md-8
+              .news-creating__block
+                .news-creating__title INFORMATION
+                .news-creating__wrapper
+                  p.d-block TITLE
+                    span.txt-red *
+                  input.form-control.news-creating__input(type="text")
+                .news-creating__wrapper
+                  p.d-block CATEGORY
+                  select.form-control
+                    option demo
+                    option demo 2
+                    option demo 3
+
+                .news-creating__wrapper
+                  p.d-block SHORT DESCRIPTION
+                    span.txt-red *
+                  input.form-control.news-creating__input(type="text")
+
+                .news-creating__wrapper
+                  p.d-block VIEWER
+                  textarea.form-control.news-creating__textarea(placeholder="Nhập tên hoặc địa chỉ email")
+
+                .news-creating__wrapper
+                  p.d-block CONTENT
+                    span.txt-red *
+                  textarea.form-control.news-creating__textarea
+                  .text-right.mt-4
+                    button.button.button--rectangle.button--outline PREVIEW
+
+            .col-md-4
+              .news-creating__block
+                .news-creating__title PUBLISH TIME
+                .mb-3
+                  p PUBLISH ON
+                  .radio
+                    label
+                      input(type="radio" name="optionsRadios" id="optionsRadios1" value="option1")
+                      span IMMEDIATELY
+                  .radio.mb-0
+                    label
+                      input(type="radio" name="optionsRadios" id="optionsRadios2" value="option2")
+                  .d-flex
+                    input.form-control.news-creating__date.input-datepicker-container(type="text")
+                    select.form-control.news-creating__hour
+                      option 00
+                      option demo 2
+                      option demo 3
+                    input.form-control.news-creating__minute(type="text")
+
+                p TILL
+                .radio
+                  label
+                    input(type="radio" name="optionsRadios2" id="optionsRadios1" value="option1")
+                    span NO EXPIRED
+                .radio.mb-0
+                  label
+                    input(type="radio" name="optionsRadios2" id="optionsRadios2" value="option2")
+                .d-flex
+                  input.form-control.news-creating__date.input-datepicker-container(type="text")
+                  select.form-control.news-creating__hour
+                    option 00
+                    option demo 2
+                    option demo 3
+                  input.form-control.news-creating__minute(type="text")
+              .news-creating__block
+                .news-creating__title TAGS
+                textarea.form-control.news-creating__textarea(placeholder="Add your tags")
+                span.d-block.mt-2 Please enter or , to add tag
+              .news-creating__block
+                .news-creating__title THUMBNAILS
+                p UPLOAD
+                .news-creating__upload
+                  .text-center
+                    p.fa.fa-upload
+                    p Drag a file here
+                .news-creating__upload-btn
+                  input(type="file" id="exampleInputFile")
+                  button.button.button--rectangle.button--outline Browse File
+                  p.news-creating__upload-notice No file chosen
+          .news-creating__block
+            .news-creating__title PREVIEW
+            span Thay đổi tên gọi và địa điểm...
+  +footer()

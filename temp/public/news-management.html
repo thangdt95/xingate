@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SCB</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Description"/>
+    <meta name="keywords" content="Description"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/reset.css"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
+  </head>
+  <body>
+    <div class="news-management">
+      <div class="news-center-header"></div>
+      <div class="container">
+        <div class="news-management-header">
+          <div class="news-management-header__left">
+            <div class="news-management-header__view-category">
+              <div class="news-management-header__view" id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>View Categories</span><span class="d-inline-block ml-2 fa fa-angle-down"></span></div>
+              <div class="section-category__dropdown dropdown-menu dropdown-menu" aria-labelledby="dLabel"><a class="section-category__dropdown-item" href="#!">
+                  <div class="d-flex align-items-center justify-content-between"><span>Society</span></div></a><a class="section-category__dropdown-item" href="#!">
+                  <div class="d-flex align-items-center justify-content-between"><span>Entertainment</span></div></a><a class="section-category__dropdown-item" href="#!">
+                  <div class="d-flex align-items-center justify-content-between"><span>Media</span></div></a><a class="section-category__dropdown-item" href="#!">
+                  <div class="d-flex align-items-center justify-content-between"><span>Sports</span></div></a><a class="section-category__dropdown-item" href="#!">
+                  <div class="d-flex align-items-center justify-content-between"><span>Politics</span></div></a></div>
+            </div>
+            <div class="news-management-header__search">
+              <div class="news-management-header__search-wrapper">
+                <input class="news-management-header__search-input" type="text" placeholder="Search news"><span class="news-management-header__search-icon fa fa-search"></span>
+              </div>
+            </div>
+          </div>
+          <div class="news-management-header__right">
+            <button class="button button--rectangle button--red button--small"><span class="d-inline-block mr-2 fa fa-pencil"></span><span>Write news</span></button>
+          </div>
+        </div>
+        <div class="news-management-table">
+          <div class="table-responsive">
+            <table class="table table--vertical-middle">
+              <thead>
+                <tr>
+                  <th class="w-25">Title</th>
+                  <th class="w-20">Short Description</th>
+                  <th class="w-10">
+                    <div class="news-management-header__category-dropdown" id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Categories</span><span class="d-inline-block ml-2 fa fa-angle-down"></span></div>
+                    <div class="section-category__dropdown dropdown-menu dropdown-menu" aria-labelledby="dLabel"><a class="section-category__dropdown-item" href="#!">
+                        <div class="d-flex align-items-center justify-content-between"><span>Society</span></div></a><a class="section-category__dropdown-item" href="#!">
+                        <div class="d-flex align-items-center justify-content-between"><span>Entertainment</span></div></a><a class="section-category__dropdown-item" href="#!">
+                        <div class="d-flex align-items-center justify-content-between"><span>Media</span></div></a><a class="section-category__dropdown-item" href="#!">
+                        <div class="d-flex align-items-center justify-content-between"><span>Sports</span></div></a><a class="section-category__dropdown-item" href="#!">
+                        <div class="d-flex align-items-center justify-content-between"><span>Politics</span></div></a></div>
+                  </th>
+                  <th class="w-10">Author</th>
+                  <th class="w-10">Last Updated</th>
+                  <th class="w-10">Publishing Date</th>
+                  <th class="w-15">
+                    <div class="news-management-header__category-dropdown" id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Status</span><span class="d-inline-block ml-2 fa fa-angle-down"></span></div>
+                    <div class="section-category__dropdown dropdown-menu dropdown-menu" aria-labelledby="dLabel"><a class="section-category__dropdown-item" href="#!">
+                        <div class="d-flex align-items-center justify-content-between"><span>Society</span></div></a><a class="section-category__dropdown-item" href="#!">
+                        <div class="d-flex align-items-center justify-content-between"><span>Entertainment</span></div></a><a class="section-category__dropdown-item" href="#!">
+                        <div class="d-flex align-items-center justify-content-between"><span>Media</span></div></a><a class="section-category__dropdown-item" href="#!">
+                        <div class="d-flex align-items-center justify-content-between"><span>Sports</span></div></a><a class="section-category__dropdown-item" href="#!">
+                        <div class="d-flex align-items-center justify-content-between"><span>Politics</span></div></a></div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Praesent vehicula feugiat nibh vel scelerisque. Morbi vitae erat non ex mattis rutrum.</td>
+                  <td>Vivamus quis nisl elementum, tincidunt eros facilisis, eleifend felis. Nullam eu neque quam. Etiam faucibus lorem vulputate magna laoreet blandit.</td>
+                  <td>Technology</td>
+                  <td class="txt-lightgrey">Henry Tran</td>
+                  <td class="txt-lightgrey">01-Nov-18</td>
+                  <td class="txt-lightgrey">03-Nov-18</td>
+                  <td>
+                    <div class="txt-blue">Publish</div>
+                    <div class="news-management-table__setting"><span class="news-management-table__edit mr-3 fa fa-pencil"></span><span class="news-management-table__more fa fa-ellipsis-v"></span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Praesent vehicula feugiat nibh vel scelerisque. Morbi vitae erat non ex mattis rutrum.</td>
+                  <td>Vivamus quis nisl elementum, tincidunt eros facilisis, eleifend felis. Nullam eu neque quam. Etiam faucibus lorem vulputate magna laoreet blandit.</td>
+                  <td>Technology</td>
+                  <td class="txt-lightgrey">Henry Tran</td>
+                  <td class="txt-lightgrey">01-Nov-18</td>
+                  <td class="txt-lightgrey">03-Nov-18</td>
+                  <td>
+                    <div class="txt-red">Unpublish</div>
+                    <div class="news-management-table__setting"><span class="news-management-table__edit mr-3 fa fa-pencil"></span><span class="news-management-table__more fa fa-ellipsis-v"></span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Praesent vehicula feugiat nibh vel scelerisque. Morbi vitae erat non ex mattis rutrum.</td>
+                  <td>Vivamus quis nisl elementum, tincidunt eros facilisis, eleifend felis. Nullam eu neque quam. Etiam faucibus lorem vulputate magna laoreet blandit.</td>
+                  <td>Technology</td>
+                  <td class="txt-lightgrey">Henry Tran</td>
+                  <td class="txt-lightgrey">01-Nov-18</td>
+                  <td class="txt-lightgrey">03-Nov-18</td>
+                  <td>
+                    <div class="txt-yellow">Expired</div>
+                    <div class="news-management-table__setting"><span class="news-management-table__edit mr-3 fa fa-pencil"></span><span class="news-management-table__more fa fa-ellipsis-v"></span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Praesent vehicula feugiat nibh vel scelerisque. Morbi vitae erat non ex mattis rutrum.</td>
+                  <td>Vivamus quis nisl elementum, tincidunt eros facilisis, eleifend felis. Nullam eu neque quam. Etiam faucibus lorem vulputate magna laoreet blandit.</td>
+                  <td>Technology</td>
+                  <td class="txt-lightgrey">Henry Tran</td>
+                  <td class="txt-lightgrey">01-Nov-18</td>
+                  <td class="txt-lightgrey">03-Nov-18</td>
+                  <td>
+                    <div class="txt-blue">Publish</div>
+                    <div class="news-management-table__setting"><span class="news-management-table__edit mr-3 fa fa-pencil"></span><span class="news-management-table__more fa fa-ellipsis-v"></span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Praesent vehicula feugiat nibh vel scelerisque. Morbi vitae erat non ex mattis rutrum.</td>
+                  <td>Vivamus quis nisl elementum, tincidunt eros facilisis, eleifend felis. Nullam eu neque quam. Etiam faucibus lorem vulputate magna laoreet blandit.</td>
+                  <td>Technology</td>
+                  <td class="txt-lightgrey">Henry Tran</td>
+                  <td class="txt-lightgrey">01-Nov-18</td>
+                  <td class="txt-lightgrey">03-Nov-18</td>
+                  <td>
+                    <div class="txt-blue">Publish</div>
+                    <div class="news-management-table__setting"><span class="news-management-table__edit mr-3 fa fa-pencil"></span><span class="news-management-table__more fa fa-ellipsis-v"></span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Praesent vehicula feugiat nibh vel scelerisque. Morbi vitae erat non ex mattis rutrum.</td>
+                  <td>Vivamus quis nisl elementum, tincidunt eros facilisis, eleifend felis. Nullam eu neque quam. Etiam faucibus lorem vulputate magna laoreet blandit.</td>
+                  <td>Technology</td>
+                  <td class="txt-lightgrey">Henry Tran</td>
+                  <td class="txt-lightgrey">01-Nov-18</td>
+                  <td class="txt-lightgrey">03-Nov-18</td>
+                  <td>
+                    <div class="txt-blue">Publish</div>
+                    <div class="news-management-table__setting"><span class="news-management-table__edit mr-3 fa fa-pencil"></span><span class="news-management-table__more fa fa-ellipsis-v"></span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Praesent vehicula feugiat nibh vel scelerisque. Morbi vitae erat non ex mattis rutrum.</td>
+                  <td>Vivamus quis nisl elementum, tincidunt eros facilisis, eleifend felis. Nullam eu neque quam. Etiam faucibus lorem vulputate magna laoreet blandit.</td>
+                  <td>Technology</td>
+                  <td class="txt-lightgrey">Henry Tran</td>
+                  <td class="txt-lightgrey">01-Nov-18</td>
+                  <td class="txt-lightgrey">03-Nov-18</td>
+                  <td>
+                    <div class="txt-blue">Publish</div>
+                    <div class="news-management-table__setting"><span class="news-management-table__edit mr-3 fa fa-pencil"></span><span class="news-management-table__more fa fa-ellipsis-v"></span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Praesent vehicula feugiat nibh vel scelerisque. Morbi vitae erat non ex mattis rutrum.</td>
+                  <td>Vivamus quis nisl elementum, tincidunt eros facilisis, eleifend felis. Nullam eu neque quam. Etiam faucibus lorem vulputate magna laoreet blandit.</td>
+                  <td>Technology</td>
+                  <td class="txt-lightgrey">Henry Tran</td>
+                  <td class="txt-lightgrey">01-Nov-18</td>
+                  <td class="txt-lightgrey">03-Nov-18</td>
+                  <td>
+                    <div class="txt-blue">Publish</div>
+                    <div class="news-management-table__setting"><span class="news-management-table__edit mr-3 fa fa-pencil"></span><span class="news-management-table__more fa fa-ellipsis-v"></span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Praesent vehicula feugiat nibh vel scelerisque. Morbi vitae erat non ex mattis rutrum.</td>
+                  <td>Vivamus quis nisl elementum, tincidunt eros facilisis, eleifend felis. Nullam eu neque quam. Etiam faucibus lorem vulputate magna laoreet blandit.</td>
+                  <td>Technology</td>
+                  <td class="txt-lightgrey">Henry Tran</td>
+                  <td class="txt-lightgrey">01-Nov-18</td>
+                  <td class="txt-lightgrey">03-Nov-18</td>
+                  <td>
+                    <div class="txt-blue">Publish</div>
+                    <div class="news-management-table__setting"><span class="news-management-table__edit mr-3 fa fa-pencil"></span><span class="news-management-table__more fa fa-ellipsis-v"></span></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Praesent vehicula feugiat nibh vel scelerisque. Morbi vitae erat non ex mattis rutrum.</td>
+                  <td>Vivamus quis nisl elementum, tincidunt eros facilisis, eleifend felis. Nullam eu neque quam. Etiam faucibus lorem vulputate magna laoreet blandit.</td>
+                  <td>Technology</td>
+                  <td class="txt-lightgrey">Henry Tran</td>
+                  <td class="txt-lightgrey">01-Nov-18</td>
+                  <td class="txt-lightgrey">03-Nov-18</td>
+                  <td>
+                    <div class="txt-blue">Publish</div>
+                    <div class="news-management-table__setting"><span class="news-management-table__edit mr-3 fa fa-pencil"></span><span class="news-management-table__more fa fa-ellipsis-v"></span></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 col-xs-8">
+            <ul class="d-flex footer-top__ul">
+              <li class="footer-top__item"><a class="footer-top__link" href="#!">GIỚI THIỆU</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="#!">NHÀ ĐẦU TƯ</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="#!">TIN TỨC</a></li>
+              <li class="footer-top__item"><a class="footer-top__link" href="#!">MẠNG LƯỚI</a></li>
+              <li class="footer-top__item footer-top__item--last"><a class="footer-top__link" href="#!">TUYỂN DỤNG</a></li>
+              <li class="footer-top__item footer-top__item--last"><a class="footer-top__link" href="#!">LIÊN HỆ</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-4">
+            <div class="footer-top__sns d-flex">
+              <div class="footer-top__sns-item"><span class="fa fa-facebook-f"></span></div>
+              <div class="footer-top__sns-item"><span class="fa fa-youtube"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-center">
+      <div class="container">
+        <div class="row">
+          <div class="footer-center__block col-md-3 col-sm-6">
+            <div class="footer-center__title">/ Khách hàng cá nhân</div>
+            <ul>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tôi muốn</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tài khoản</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tiền gửi</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tiền vay</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Chuyển tiền quốc tế</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Sản phẩm dịch vụ</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Sản phẩm liên kết</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Chính sách</a></li>
+            </ul>
+          </div>
+          <div class="footer-center__block col-md-3 col-sm-6">
+            <div class="footer-center__title">/ Khách hàng doanh nghiệp</div>
+            <ul>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tôi muốn</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tài khoản</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tiền gửi</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Tiền vay</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Chuyển tiền quốc tế</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Sản phẩm dịch vụ</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Sản phẩm liên kết</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Chính sách</a></li>
+            </ul>
+          </div>
+          <div class="footer-center__block col-md-3 col-sm-6">
+            <div class="mb-20">
+              <div class="footer-center__title">/ Thẻ & Ngân hàng điện tử</div>
+              <ul>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ cá nhân</a></li>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ doanh nghiệp</a></li>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Ngân hàng điện tử</a></li>
+              </ul>
+            </div>
+            <div class="footer-center__title">/ Chương trình khuyến mãi</div>
+            <ul>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Khách hàng cá nhân</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Khách hàng doanh nghiệp</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Ưu đãi chủ thẻ</a></li>
+            </ul>
+          </div>
+          <div class="footer-center__block col-md-3 col-sm-6">
+            <div class="mb-20">
+              <div class="footer-center__title">/ Thẻ & Ngân hàng điện tử</div>
+              <ul>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ cá nhân</a></li>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Thẻ doanh nghiệp</a></li>
+                <li class="footer-center__item"><a class="footer-center__link" href="#!">Ngân hàng điện tử</a></li>
+              </ul>
+            </div>
+            <div class="footer-center__title">/ Chương trình khuyến mãi</div>
+            <ul>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Khách hàng cá nhân</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Khách hàng doanh nghiệp</a></li>
+              <li class="footer-center__item"><a class="footer-center__link" href="#!">Ưu đãi chủ thẻ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__title">NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN SÀI GÒN</div>
+      <p class="footer-bottom__contact">Hội sở: 927 Trần Hưng Đạo, Phường 1, Quận 5, Tp. HCM - Điện thoại: (028) 39230 666 - Fax: (028) 39225 888</p><span>SWIFT Code: SACLVNVX</span>
+    </div>
+    <script src="scripts/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/popper.js/dist/umd/popper.min.js"></script>
+    <script src="scripts/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="scripts/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script src="scripts/main.js"></script>
+  </footer>
+</html>

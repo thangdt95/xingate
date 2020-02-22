@@ -1,0 +1,748 @@
+mixin nav
+  // NAV DESKTOP
+  .nav
+    .nav__wrapper.d-flex.justify-content-between.align-items-center.w-100
+      .nav__logo
+        a(href="#!")
+          img.nav__logo-img(src="images/logo.png", alt="")
+      ul.nav__tab.d-flex.align-items-center
+        li.nav__tab-item.nav-search.dropdown.js-click-inside-dropdown
+          .nav__search-mobile
+            .nav__search(id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+              span.fa.fa-search
+            .nav__noti-dropdown.nav__noti-dropdown--app.dropdown-menu.pull-right(aria-labelledby="dLabel")
+              .nav__search-input-wrapper
+                .nav__search-input
+                  input.nav__input(type="text", placeholder="Search apps")
+                  span.nav__input-search-icon.fa.fa-search
+                  span.nav__input-search-close.fa.fa-times
+          .nav__search-desktop
+            .nav__search.js-show-search-bar
+              span.fa.fa-search
+            .nav__search-input-wrapper
+              .nav__search-input
+                input.nav__input(type="text", placeholder="Search apps")
+                span.nav__input-search-icon.fa.fa-search
+                span.nav__input-search-close.fa.fa-times
+        li.nav__tab-item.nav-app.dropdown.js-click-inside-dropdown
+          .nav__application(id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+            span.fa.fa-th
+          .nav__noti-dropdown.nav__noti-dropdown--app.dropdown-menu.pull-right(aria-labelledby="dLabel")
+            .nav__panel-group.panel-group#accordion(role="tablist" aria-multiselectable="true")
+              .nav__panel.panel
+                .nav__panel-heading.panel-heading#headingOne(role="tab")
+                  h4.nav__panel-title.panel-title
+                    .d-flex.align-items-center.justify-content-between(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne")
+                      span Favourite Apps
+                      .nav__panel-icon
+                        span.fa.fa-caret-down
+                #collapseOne.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingOne")
+                  .nav__panel-body.panel-body
+                    .nav__apps-group.d-flex.align-items-center
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-home
+                            .nav__app-mark
+                              span.fa.fa-star-o
+                          span.nav__app-text Home
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-folder-open
+                          span.nav__app-text Document
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-calendar
+                          span.nav__app-text Announcement
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-wikipedia-w
+                          span.nav__app-text Wiki
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-comments
+                          span.nav__app-text Forums
+
+            .nav__panel-group.panel-group#accordion2(role="tablist" aria-multiselectable="true")
+              .nav__panel.panel
+                .nav__panel-heading.panel-heading#headingTwo(role="tab")
+                  h4.nav__panel-title.panel-title
+                    .d-flex.align-items-center.justify-content-between(role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo")
+                      span Coroporate Apps
+                      .nav__panel-icon
+                        span.fa.fa-caret-down
+                #collapseTwo.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingTwo")
+                  .nav__panel-body.panel-body
+                    .nav__apps-group.d-flex.align-items-center
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-home
+                            .nav__app-mark
+                              span.fa.fa-star-o
+                          span.nav__app-text Home
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-folder-open
+                          span.nav__app-text Document
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-calendar
+                          span.nav__app-text Announcement
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-wikipedia-w
+                          span.nav__app-text Wiki
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-comments
+                          span.nav__app-text Forums
+                    .nav__apps-group.d-flex.align-items-center
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-home
+                            .nav__app-mark
+                              span.fa.fa-star-o
+                          span.nav__app-text Home
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-folder-open
+                          span.nav__app-text Document
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-calendar
+                          span.nav__app-text Announcement
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-wikipedia-w
+                          span.nav__app-text Wiki
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-comments
+                          span.nav__app-text Forums
+                    .nav__apps-group.d-flex.align-items-center
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-home
+                            .nav__app-mark
+                              span.fa.fa-star-o
+                          span.nav__app-text Home
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-folder-open
+                          span.nav__app-text Document
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-calendar
+                          span.nav__app-text Announcement
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-wikipedia-w
+                          span.nav__app-text Wiki
+                      .nav__app
+                        .nav__app-wrapper
+                          .nav__app-block
+                            .nav__app-icon
+                              span.fa.fa-comments
+                          span.nav__app-text Forums
+        li.nav__tab-item.nav-noti.dropdown
+          .nav__noti(id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+            span.fa.fa-bell
+            .nav__noti-status
+          .nav__noti-dropdown.dropdown-menu.pull-right(aria-labelledby="dLabel")
+            a.nav__noti-item(href="#!")
+              .nav__noti-title [CI Project] Meeting
+              .nav__noti-desc Hi General, we have new meeting this week, please pay attention
+            a.nav__noti-item(href="#!")
+              .nav__noti-title Xingate Meetup
+              .nav__noti-desc We recieved a call from SCB and we will have a new project soon
+              .nav__noti-file.d-flex.align-items-center
+                span.nav__noti-file-icon.fa.fa-image
+                span.text-cut new-project.img
+            a.nav__noti-item(href="#!")
+              .nav__noti-title Xingate Meetup
+              .nav__noti-desc We recieved a call from SCB and we will have a new project soon
+            a.nav__noti-item(href="#!")
+              .nav__noti-title Xingate Meetup
+              .nav__noti-desc We recieved a call from SCB and we will have a new project soon
+            a.nav__noti-item(href="#!")
+              .nav__noti-title Xingate Meetup
+              .nav__noti-desc We recieved a call from SCB and we will have a new project soon
+            a.nav__noti-item(href="#!")
+              .nav__noti-title [CI Project] Meeting
+              .nav__noti-desc Hi General, we have new meeting this week, please pay attention
+            a.nav__noti-item(href="#!")
+              .nav__noti-title Xingate Meetup
+              .nav__noti-desc We recieved a call from SCB and we will have a new project soon
+            a.nav__noti-item(href="#!")
+              .nav__noti-title Xingate Meetup
+              .nav__noti-desc We recieved a call from SCB and we will have a new project soon
+            a.nav__noti-item(href="#!")
+              .nav__noti-title Xingate Meetup
+              .nav__noti-desc We recieved a call from SCB and we will have a new project soon
+            a.nav__noti-item(href="#!")
+              .nav__noti-title Xingate Meetup
+              .nav__noti-desc We recieved a call from SCB and we will have a new project soon
+        li.nav__tab-item.nav-profile.dropdown.js-click-inside-dropdown
+          .nav__avar(id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+            img.nav__avar-img(src="images/avatar.png", alt="")
+          .nav__noti-dropdown.dropdown-menu.pull-right(aria-labelledby="dLabel")
+            .nav__profile
+              .nav__profile-header.d-flex.align-items-center
+                .nav__profile-img
+                  img(src="images/avatar.png", alt="")
+                .nav__profile-info
+                  .nav__profile-name Martin Saurer
+                  .nav__profile-desc Marketing Director
+              .nav__profile-body
+                ul.nav__profile-ul
+                  li.nav__profile-item
+                    a.nav__profile-link(href="#!") ABCD
+                  li.nav__profile-item.nav__profile-item--pd0
+                    .nav__panel-group.panel-group#accordion(role="tablist" aria-multiselectable="true")
+                      .nav__panel.panel
+                        .nav__panel-heading.panel-heading#headingOne-profile(role="tab")
+                          h4.nav__panel-title.panel-title
+                            .d-flex.align-items-center.justify-content-between(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne-profile" aria-expanded="true" aria-controls="collapseOne-profile")
+                              span Favourite Apps
+                              .nav__panel-icon
+                                span.fa.fa-caret-down
+                        ul.nav__profile-ul.nav__sub-profile.nav__profile-ul--pdl#collapseOne-profile.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingOne-profile")
+                          li.nav__profile-item
+                            a.nav__profile-link(href="#!") ABCD
+                          li.nav__profile-item
+                            a.nav__profile-link(href="#!") ABCD
+                          li.nav__profile-item
+                            a.nav__profile-link(href="#!") ABCD
+                          li.nav__profile-item
+                            a.nav__profile-link(href="#!") ABCD
+                  li.nav__profile-item
+                    a.nav__profile-link(href="#!") ABCD
+        li.nav__tab-item.nav-bar
+          .nav__bar.js-nav-bar
+            span.fa.fa-bars
+          .nav__sidebar
+            .nav__search-input
+              input.nav__input.w-100(type="text", placeholder="Search apps")
+              span.nav__input-search-icon.fa.fa-search
+              span.nav__input-search-close.fa.fa-times
+            .nav__sidebar-menu
+              ul.nav__profile-ul
+                li.nav__profile-item
+                  a.nav__profile-link(href="#!") ABCD
+                  .nav__sidebar-hover
+                    .nav__sidebar-hover-header
+                      .nav__search-input
+                        input.nav__input.w-100(type="text", placeholder="Search apps")
+                        span.nav__input-search-icon.fa.fa-search
+                        span.nav__input-search-close.fa.fa-times
+                    .nav__sidebar-hover-body
+                      .nav__apps-group.d-flex.align-items-top
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-home
+                              .nav__app-mark
+                                span.fa.fa-star-o
+                            span.nav__app-text Home
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-folder-open
+                            span.nav__app-text Document
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-calendar
+                            span.nav__app-text Announcement
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-wikipedia-w
+                            span.nav__app-text Wiki
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-comments
+                            span.nav__app-text Forums
+                      .nav__apps-group.d-flex.align-items-top
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-home
+                              .nav__app-mark
+                                span.fa.fa-star-o
+                            span.nav__app-text Home
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-folder-open
+                            span.nav__app-text Document
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-calendar
+                            span.nav__app-text Announcement
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-wikipedia-w
+                            span.nav__app-text Wiki
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-comments
+                            span.nav__app-text Forums
+                      .nav__apps-group.d-flex.align-items-top
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-home
+                              .nav__app-mark
+                                span.fa.fa-star-o
+                            span.nav__app-text Home
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-folder-open
+                            span.nav__app-text Document
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-calendar
+                            span.nav__app-text Announcement
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-wikipedia-w
+                            span.nav__app-text Wiki
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-comments
+                            span.nav__app-text Forums
+                      .nav__apps-group.d-flex.align-items-top
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-home
+                              .nav__app-mark
+                                span.fa.fa-star-o
+                            span.nav__app-text Home
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-folder-open
+                            span.nav__app-text Document
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-calendar
+                            span.nav__app-text Announcement
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-wikipedia-w
+                            span.nav__app-text Wiki
+                        .nav__app
+                          .nav__app-wrapper
+                            .nav__app-block
+                              .nav__app-icon
+                                span.fa.fa-comments
+                            span.nav__app-text Forums
+
+                li.nav__profile-subitem
+                  .nav__panel-group.panel-group#accordion(role="tablist" aria-multiselectable="true")
+                    .nav__panel.panel
+                      .nav__panel-heading.panel-heading#headingOne-sidebar(role="tab")
+                        h4.nav__panel-title.panel-title
+                          .d-flex.align-items-center.justify-content-between(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne-sidebar" aria-expanded="true" aria-controls="collapseOne-sidebar")
+                            span Favourite Apps
+                            .nav__panel-icon
+                              span.fa.fa-caret-down
+                      ul.nav__profile-ul.nav__sub-profile#collapseOne-sidebar.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingOne-sidebar")
+                        li.nav__profile-item
+                          a.nav__profile-link(href="#!") ABCD
+                          .nav__sidebar-hover
+                            .nav__sidebar-hover-header
+                              .nav__search-input
+                                input.nav__input.w-100(type="text", placeholder="Search apps")
+                                span.nav__input-search-icon.fa.fa-search
+                                span.nav__input-search-close.fa.fa-times
+                            .nav__sidebar-hover-body
+                              .nav__apps-group.d-flex.align-items-top
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-home
+                                      .nav__app-mark
+                                        span.fa.fa-star-o
+                                    span.nav__app-text Home
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-folder-open
+                                    span.nav__app-text Document
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-calendar
+                                    span.nav__app-text Announcement
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-wikipedia-w
+                                    span.nav__app-text Wiki
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-comments
+                                    span.nav__app-text Forums
+                              .nav__apps-group.d-flex.align-items-top
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-home
+                                      .nav__app-mark
+                                        span.fa.fa-star-o
+                                    span.nav__app-text Home
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-folder-open
+                                    span.nav__app-text Document
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-calendar
+                                    span.nav__app-text Announcement
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-wikipedia-w
+                                    span.nav__app-text Wiki
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-comments
+                                    span.nav__app-text Forums
+                              .nav__apps-group.d-flex.align-items-top
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-home
+                                      .nav__app-mark
+                                        span.fa.fa-star-o
+                                    span.nav__app-text Home
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-folder-open
+                                    span.nav__app-text Document
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-calendar
+                                    span.nav__app-text Announcement
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-wikipedia-w
+                                    span.nav__app-text Wiki
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-comments
+                                    span.nav__app-text Forums
+                              .nav__apps-group.d-flex.align-items-top
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-home
+                                      .nav__app-mark
+                                        span.fa.fa-star-o
+                                    span.nav__app-text Home
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-folder-open
+                                    span.nav__app-text Document
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-calendar
+                                    span.nav__app-text Announcement
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-wikipedia-w
+                                    span.nav__app-text Wiki
+                                .nav__app
+                                  .nav__app-wrapper
+                                    .nav__app-block
+                                      .nav__app-icon
+                                        span.fa.fa-comments
+                                    span.nav__app-text Forums
+                        li.nav__profile-item
+                          a.nav__profile-link(href="#!") ABCD
+                        li.nav__profile-item
+                          a.nav__profile-link(href="#!") ABCD
+                        li.nav__profile-item
+                          a.nav__profile-link(href="#!") ABCD
+
+                li.nav__profile-subitem
+                  .nav__panel-group.panel-group#accordion(role="tablist" aria-multiselectable="true")
+                    .nav__panel.panel
+                      .nav__panel-heading.panel-heading#headingTwo-sidebar(role="tab")
+                        h4.nav__panel-title.panel-title
+                          .d-flex.align-items-center.justify-content-between(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo-sidebar" aria-expanded="true" aria-controls="collapseTwo-sidebar")
+                            span Favourite Apps
+                            .nav__panel-icon
+                              span.fa.fa-caret-down
+                      ul.nav__profile-ul.nav__sub-profile#collapseTwo-sidebar.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingTwo-sidebar")
+                        li.nav__profile-item
+                          a.nav__profile-link(href="#!") ABCD
+                        li.nav__profile-item
+                          a.nav__profile-link(href="#!") ABCD
+                        li.nav__profile-item
+                          a.nav__profile-link(href="#!") ABCD
+                        li.nav__profile-item
+                          a.nav__profile-link(href="#!") ABCD
+
+                li.nav__profile-item
+                  a.nav__profile-link(href="#!") DEFG
+
+                //- li.nav__profile-item
+                //-   .nav__sub-item-mobile
+                //-     .nav__panel-group.panel-group#accordion(role="tablist" aria-multiselectable="true")
+                //-       .nav__panel.panel
+                //-         .nav__panel-heading.panel-heading#headingThree-sidebar(role="tab")
+                //-           h4.nav__panel-title.panel-title
+                //-             .d-flex.align-items-center.justify-content-between(role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree-sidebar" aria-expanded="true" aria-controls="collapseThree-sidebar")
+                //-               span Favourite Apps
+                //-               .nav__panel-icon
+                //-                 span.fa.fa-caret-down
+                //-         ul.nav__profile-ul.nav__sub-profile#collapseThree-sidebar.panel-collapse.collapse.in(role="tabpanel" aria-labelledby="headingThree-sidebar")
+                //-           li.nav__profile-item
+                //-             a.nav__profile-link(href="#!") ABCD
+                //-           li.nav__profile-item
+                //-             a.nav__profile-link(href="#!") ABCD
+                //-           li.nav__profile-item
+                //-             a.nav__profile-link(href="#!") ABCD
+                //-           li.nav__profile-item
+                //-             a.nav__profile-link(href="#!") ABCD
+                //-   .nav__profile-subitem.nav__sub-item-desktop
+                //-     a.nav__profile-link(href="#!") ABCDhover
+                //-     .nav__sidebar-hover
+                //-       .nav__sidebar-hover-header
+                //-         .nav__search-input
+                //-           input.nav__input.w-100(type="text", placeholder="Search apps")
+                //-           span.nav__input-search-icon.fa.fa-search
+                //-           span.nav__input-search-close.fa.fa-times
+                //-       .nav__sidebar-hover-body
+                //-         .nav__apps-group.d-flex.align-items-top
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-home
+                //-                 .nav__app-mark
+                //-                   span.fa.fa-star-o
+                //-               span.nav__app-text Home
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-folder-open
+                //-               span.nav__app-text Document
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-calendar
+                //-               span.nav__app-text Announcement
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-wikipedia-w
+                //-               span.nav__app-text Wiki
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-comments
+                //-               span.nav__app-text Forums
+                //-         .nav__apps-group.d-flex.align-items-top
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-home
+                //-                 .nav__app-mark
+                //-                   span.fa.fa-star-o
+                //-               span.nav__app-text Home
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-folder-open
+                //-               span.nav__app-text Document
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-calendar
+                //-               span.nav__app-text Announcement
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-wikipedia-w
+                //-               span.nav__app-text Wiki
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-comments
+                //-               span.nav__app-text Forums
+                //-         .nav__apps-group.d-flex.align-items-top
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-home
+                //-                 .nav__app-mark
+                //-                   span.fa.fa-star-o
+                //-               span.nav__app-text Home
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-folder-open
+                //-               span.nav__app-text Document
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-calendar
+                //-               span.nav__app-text Announcement
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-wikipedia-w
+                //-               span.nav__app-text Wiki
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-comments
+                //-               span.nav__app-text Forums
+                //-         .nav__apps-group.d-flex.align-items-top
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-home
+                //-                 .nav__app-mark
+                //-                   span.fa.fa-star-o
+                //-               span.nav__app-text Home
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-folder-open
+                //-               span.nav__app-text Document
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-calendar
+                //-               span.nav__app-text Announcement
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-wikipedia-w
+                //-               span.nav__app-text Wiki
+                //-           .nav__app
+                //-             .nav__app-wrapper
+                //-               .nav__app-block
+                //-                 .nav__app-icon
+                //-                   span.fa.fa-comments
+                //-               span.nav__app-text Forums

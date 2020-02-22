@@ -1,0 +1,122 @@
+include ../modules/head/head
+include ../modules/footer/footer
+include ../modules/nav/nav
+include ../modules/button/button
+include ../modules/newsletter/newsletter
+
+doctype html
+html
+  +head
+  body
+    .news-center
+      .news-center-header
+      .news-center-section
+        .container
+          .news-center-body
+            // NEWS-NAVIGATION
+            .section-nav-news
+              .section-nav-news__wrapper
+                .section-nav-news__item(data-toggle="tooltip", data-placement="right", title="Bookmark")
+                  span.fa.fa-bookmark
+                .section-nav-news__item(data-toggle="tooltip", data-placement="right", title="Category")
+                  span.fa.fa-list
+                .section-nav-news__item(data-toggle="tooltip", data-placement="right", title="Tag")
+                  span.fa.fa-tag
+                .section-nav-news__item(data-toggle="tooltip", data-placement="right", title="Search")
+                  span.fa.fa-search(data-toggle="modal" data-target=".searching-modal")
+
+            // NEWS-DETAIL
+            .news-detail
+              .news-detail__header
+                .news-detail__title Australian officials charged nearly 200 with fire offenses as deadly wildfires rage
+                .news-detail__info.d-flex.justify-content-between.align-items-bottom.mt-3
+                  .news-detail__author.d-flex.align-items-top
+                    .news-detail__author-avar.mr-3
+                      img(src="../images/demo.jpeg", alt="")
+                    .news-detail__author-detail
+                      .news-detail__author-name By
+                        span.font-weight--bold.ml-2 Vie Rose
+                      .section-top-news__author.d-flex.align-items-center
+                        span Jul 5, 2018
+                        span.dot
+                        span 3 min read
+                  .news-detail__category
+                    button.button.button--rectangle.button--black.button--small
+                      span.d-inline-block.mr-2.fa.fa-pencil-square-o
+                      span Worldwide
+                .news-detail__summary As exhausted firefighters in Australia toil in cooler weather to shore up defenses against deadly wildfires, officials announced Monday that nearly 200 people have been charged with fire-related offenses since the catastrophic wildfire season began.
+              .news-detail__body
+                .news-detail__img
+                  img(src="../images/demo.jpeg", alt="")
+                .news-detail__img-summary The deadly wildfires, which have been raging in Australia since September, have already burned about 12.35 million acres of land and destroyed more than 2,000 homes. (AP Photo/Rick Rycroft)
+                .news-detail__content
+                  p The fires, fueled by drought and the country’s hottest and driest year on record, have been raging since September, months earlier than is typical for Australia’s annual wildfire season. So far, the blazes have killed 25 people, destroyed 2,000 homes and scorched an area twice the size of the state of Maryland.
+
+                  p In the New South Wales state, 130 fires were still burning on Tuesday, around 50 of which were uncontrolled.
+
+                  p The NSW Police Force announced Monday that since Nov. 8, authorities have taken legal action against 183 people for fire-related offenses, including 24 individuals who have been charged for allegedly deliberately lighting bushfires – a crime punishable by up to 21 years in prison.
+
+                .news-detail__img.news-detail__img--fit-width
+                  img(src="../images/demo.jpeg", alt="")
+                .news-detail__img-summary The deadly wildfires, which have been raging in Australia since September, have already burned about 12.35 million acres of land and destroyed more than 2,000 homes. (AP Photo/Rick Rycroft)
+                .news-detail__content
+                  p Police and Emergency Services Minister David Elliott told reporters at a news conference that three additional people were charged with alleged looting in areas affected by the fires.
+
+                  p Elliott, who described the state as a "tinder box situation," said anyone caught putting the community at risk will be put "before the court," according to news.com.au.
+
+                  p “In my mind, anybody that lights a fire either necessarily or unnecessarily against the total fire ban is putting the community at risk and that needs to be pulled up, called out and in many cases, to be put before the court,” he said in a press conference on Tuesday.
+
+
+                .news-detail__img
+                  img(src="../images/demo.jpeg", alt="")
+                .news-detail__img-summary The deadly wildfires, which have been raging in Australia since September, have already burned about 12.35 million acres of land and destroyed more than 2,000 homes. (AP Photo/Rick Rycroft)
+                .news-detail__content
+                  p Police and Emergency Services Minister David Elliott told reporters at a news conference that three additional people were charged with alleged looting in areas affected by the fires.
+
+                  p Elliott, who described the state as a "tinder box situation," said anyone caught putting the community at risk will be put "before the court," according to news.com.au.
+
+                  p “In my mind, anybody that lights a fire either necessarily or unnecessarily against the total fire ban is putting the community at risk and that needs to be pulled up, called out and in many cases, to be put before the court,” he said in a press conference on Tuesday.
+
+                .news-detail__tag
+                  button.button.button--rectangle.button--outline.button--xsmall.mr-3
+                    span Wildfires
+
+                  button.button.button--rectangle.button--outline.button--xsmall.mr-3
+                    span Fire
+
+                  button.button.button--rectangle.button--outline.button--xsmall
+                    span Austrailia
+
+                .news-detail__sns.d-flex.align-items-center.justify-content-between
+                  .news-detail__like.d-flex.align-items-center
+                    .news-detail__like-bg.mr-3
+                      .fa.fa-thumbs-up
+                    .news-detail__like-number
+                      span.font-weight--bold.mr-2 21
+                      span people like this!
+                  .news-detail__share
+                    span.fa.fa-bookmark
+                    span.fa.fa-share-alt
+
+                .news-detail__comment-section
+                  .news-detail__comment-title COMMENT (12)
+                  .d-flex
+                    .news-detail__user
+                      .news-detail__avar
+                        img(src="../images/demo.jpeg", alt="")
+                        .news-detail__status.news-detail__status--bg-green
+                    .news-detail__comment
+                      textarea.form-control.news-creating__textarea(placeholder="Add a comment")
+                      .news-detail__comment-icon
+                        span.fa.fa-paper-plane
+
+
+                .news-detail__sort.d-flex.align-items-center.mt-5
+                  p.mr-3 Sort by
+                  .news-detail__dropdown-wrapper
+                    select.form-control
+                      option Newest
+                      option Best
+                      option Oldest
+
+  +footer()

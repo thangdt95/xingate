@@ -1,0 +1,20 @@
+mixin newsletter
+  .newsletter
+    .container
+      .row
+        .col-sm-6
+          .newsletter__title Download SCB Banking App
+          .d-flex
+            .newsletter__apps
+              a(href="#!")
+                img.newsletter__apps-img(src="images/app-as.jpg", alt="")
+            .newsletter__apps
+              a(href="#!")
+                img.newsletter__apps-img(src="images/app-gp.png", alt="")
+        .col-sm-6.d-flex.newsletter-register.flex-column.align-items-end
+          .newsletter__resgister
+            .newsletter__title Register Newsletter from SCB
+            .newsletter__input-outter
+              input.newsletter__input(type="text", placeholder="Your Email")
+              .newsletter__btn
+                +button-red-small('SEND')

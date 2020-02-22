@@ -1,0 +1,116 @@
+include ../modules/head/head
+include ../modules/footer/footer
+include ../modules/nav/nav
+include ../modules/button/button
+include ../modules/newsletter/newsletter
+
+doctype html
+html
+  +head
+  body
+    .news-management
+      .news-center-header
+      .container
+        .news-management-header
+          .news-management-header__left
+            .news-management-header__view-category
+              .news-management-header__view(id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                span View Categories
+                span.d-inline-block.ml-2.fa.fa-angle-down
+              .section-category__dropdown.dropdown-menu.dropdown-menu(aria-labelledby="dLabel")
+                a.section-category__dropdown-item(href="#!")
+                  .d-flex.align-items-center.justify-content-between
+                    span Society
+                a.section-category__dropdown-item(href="#!")
+                  .d-flex.align-items-center.justify-content-between
+                    span Entertainment
+                a.section-category__dropdown-item(href="#!")
+                  .d-flex.align-items-center.justify-content-between
+                    span Media
+                a.section-category__dropdown-item(href="#!")
+                  .d-flex.align-items-center.justify-content-between
+                    span Sports
+                a.section-category__dropdown-item(href="#!")
+                  .d-flex.align-items-center.justify-content-between
+                    span Politics
+            .news-management-header__search
+              .news-management-header__search-wrapper
+                input.news-management-header__search-input(type="text", placeholder="Search news")
+                span.news-management-header__search-icon.fa.fa-search
+          .news-management-header__right
+            button.button.button--rectangle.button--red.button--small
+              span.d-inline-block.mr-2.fa.fa-pencil
+              span Write news
+        .news-management-table
+          .table-responsive
+            table.table.table--vertical-middle
+              thead
+                tr
+                  th.w-25 Title
+                  th.w-20 Short Description
+                  th.w-10
+                    .news-management-header__category-dropdown(id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                      span Categories
+                      span.d-inline-block.ml-2.fa.fa-angle-down
+                    .section-category__dropdown.dropdown-menu.dropdown-menu(aria-labelledby="dLabel")
+                      a.section-category__dropdown-item(href="#!")
+                        .d-flex.align-items-center.justify-content-between
+                          span Society
+                      a.section-category__dropdown-item(href="#!")
+                        .d-flex.align-items-center.justify-content-between
+                          span Entertainment
+                      a.section-category__dropdown-item(href="#!")
+                        .d-flex.align-items-center.justify-content-between
+                          span Media
+                      a.section-category__dropdown-item(href="#!")
+                        .d-flex.align-items-center.justify-content-between
+                          span Sports
+                      a.section-category__dropdown-item(href="#!")
+                        .d-flex.align-items-center.justify-content-between
+                          span Politics
+                  th.w-10 Author
+                  th.w-10 Last Updated
+                  th.w-10 Publishing Date
+                  th.w-15
+                    .news-management-header__category-dropdown(id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                      span Status
+                      span.d-inline-block.ml-2.fa.fa-angle-down
+                    .section-category__dropdown.dropdown-menu.dropdown-menu(aria-labelledby="dLabel")
+                      a.section-category__dropdown-item(href="#!")
+                        .d-flex.align-items-center.justify-content-between
+                          span Society
+                      a.section-category__dropdown-item(href="#!")
+                        .d-flex.align-items-center.justify-content-between
+                          span Entertainment
+                      a.section-category__dropdown-item(href="#!")
+                        .d-flex.align-items-center.justify-content-between
+                          span Media
+                      a.section-category__dropdown-item(href="#!")
+                        .d-flex.align-items-center.justify-content-between
+                          span Sports
+                      a.section-category__dropdown-item(href="#!")
+                        .d-flex.align-items-center.justify-content-between
+                          span Politics
+              tbody
+                each val, index in [1,2,3,4,5,6,7,8,9,10]
+                  tr
+                    td Praesent vehicula feugiat nibh vel scelerisque. Morbi vitae erat non ex mattis rutrum.
+                    td Vivamus quis nisl elementum, tincidunt eros facilisis, eleifend felis. Nullam eu neque quam. Etiam faucibus lorem vulputate magna laoreet blandit.
+                    td Technology
+                    td.txt-lightgrey Henry Tran
+                    td.txt-lightgrey 01-Nov-18
+                    td.txt-lightgrey 03-Nov-18
+                    td
+                      if (index === 0 || index === 1 || index === 2)
+                        if index === 0
+                          .txt-blue Publish
+                        if index === 1
+                          .txt-red Unpublish
+                        if index === 2
+                          .txt-yellow Expired
+                      else
+                        .txt-blue Publish
+                      .news-management-table__setting
+                        span.news-management-table__edit.mr-3.fa.fa-pencil
+                        span.news-management-table__more.fa.fa-ellipsis-v
+  +footer()

@@ -1,0 +1,281 @@
+include ../modules/head/head
+include ../modules/footer/footer
+include ../modules/nav/nav
+include ../modules/button/button
+include ../modules/newsletter/newsletter
+
+doctype html
+html
+  +head
+  body
+    .news-center
+      .news-center-header
+      .news-center-section
+        .container
+          .news-center-body
+            // NEWS-NAVIGATION
+            .section-nav-news
+              .section-nav-news__wrapper
+                .section-nav-news__item(data-toggle="tooltip", data-placement="right", title="Bookmark")
+                  span.fa.fa-bookmark
+                .section-nav-news__item(data-toggle="tooltip", data-placement="right", title="Category")
+                  span.fa.fa-list
+                .section-nav-news__item(data-toggle="tooltip", data-placement="right", title="Tag")
+                  span.fa.fa-tag
+                .section-nav-news__item(data-toggle="tooltip", data-placement="right", title="Search")
+                  span.fa.fa-search(data-toggle="modal" data-target=".searching-modal")
+
+            // SECTION-TOP-NEWS
+            .section-top-news
+              .section-top-news__wrapper.d-flex
+                .section-top-news__left
+                  a(href="#!").section-top-news__item.section-top-news__item--large
+                    .section-top-news__pic
+                      img(src="../images/demo.jpeg", alt="")
+                    .section-top-news__content
+                      .section-top-news__title 2020 Design Conferences, Neumorphism, Generative Placeholders
+                      .section-top-news__desc I feel lucky. Being one of the editors at the UX Collective allows me to read tons of great stories every week, submitted by designers from all over the world.
+                      .section-top-news__author.d-flex.align-items-center
+                        span By Vie Rose
+                        span.dot
+                        span 3 hours ago
+                      .section-top-news__read.d-flex.align-items-center
+                        span.d-inline-block.mr-4 3 min read
+                        span.d-inline-block.mr-4.section-top-news__icon.fa.fa-share-alt
+                        span.d-inline-block.section-top-news__icon.fa.fa-bookmark
+                .section-top-news__right
+                  each val, index in [1,2,3,4]
+                    a(href="#!").section-top-news__item
+                      .section-top-news__pic
+                        img(src="../images/demo.jpeg", alt="")
+                      .section-top-news__content
+                        .section-top-news__title How can Facebook better design its political ads for 2020?
+                        .section-top-news__author.d-flex.align-items-center
+                          span By Vie Rose
+                          span.dot
+                          span 3 hours ago
+                        .section-top-news__read
+                          span.d-inline-block.mr-4 3 min read
+                          span.d-inline-block.mr-4.section-top-news__icon.fa.fa-share-alt
+                          span.d-inline-block.section-top-news__icon.fa.fa-bookmark
+            .row.section-custom-news
+              .col-md-8
+                // SECTION-SUGGESTION
+                .section-suggest
+                  .news-center__title SUGGESTED FOR YOU
+                  each val, index in [1,2,3,4,5,6]
+                    a(href="#!").section-top-news__item.section-top-news__item--suggest
+                      .section-top-news__pic
+                        img(src="../images/demo.jpeg", alt="")
+                      .section-top-news__content
+                        .section-top-news__title 2020 Design Conferences, Neumorphism, Generative Placeholders
+                        .section-top-news__desc I feel lucky. Being one of the editors at the UX Collective allows me to read tons of great stories every week, submitted by designers from...
+                        .section-top-news__author.d-flex.align-items-center
+                          span By Vie Rose
+                          span.dot
+                          span 3 hours ago
+                        .section-top-news__read
+                          span.d-inline-block.mr-4 3 min read
+                          span.d-inline-block.mr-4.section-top-news__icon.fa.fa-share-alt
+                          span.d-inline-block.section-top-news__icon.fa.fa-bookmark
+
+              .col-md-4
+                // SECTION-POPULAR
+                .news-center__title POPULAR
+                each val, index in [1,2,3,4,5]
+                  .section-popular
+                    .section-popular__number 1
+                    a(href="#!").section-popular__content
+                      .section-top-news__title How can Facebook better design its political ads for 2020?
+                      .section-top-news__author.d-flex.align-items-center
+                        span By Vie Rose
+                        span.dot
+                        span.d-inline-block.mr-4 3 hours ago
+                        span.d-inline-block.mr-4.section-top-news__icon.fa.fa-share-alt
+                        span.d-inline-block.section-top-news__icon.fa.fa-bookmark
+
+            // SECTION-CATEGORY
+            .section-category
+              each val,index in [1,2]
+                .section-category__wrapper.d-flex.justify-content-between
+                  .section-category__block
+                    .section-category__title.d-flex.align-items-center
+                      .news-center__title.news-center__title--has-border.mr-4.mb-0 SOCIETY
+                      span.section-category__down.dropdown
+                        span.fa.fa-angle-down.section-category__down-icon(id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        .section-category__dropdown.dropdown-menu.dropdown-menu(aria-labelledby="dLabel")
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Society
+                              span.fa.fa-check
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Entertainment
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Media
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Sports
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Politics
+
+                    a(href="#!").section-top-news__item.section-top-news__item--category-large
+                      .section-top-news__pic
+                        img(src="../images/demo.jpeg", alt="")
+                      .section-top-news__content
+                        .section-top-news__title What I learnt from  what you shouldn’t do as an applicant
+                        .section-top-news__desc I feel lucky. Being one of the editors at the UX Collective allows me to read tons of great stories every week, submitted by designers from...
+                        .section-top-news__author.d-flex.align-items-center
+                          span By Vie Rose
+                          span.dot
+                          span 3 hours ago
+                        .section-top-news__read
+                          span.d-inline-block.mr-4 3 min read
+                          span.d-inline-block.mr-4.section-top-news__icon.fa.fa-share-alt
+                          span.d-inline-block.section-top-news__icon.fa.fa-bookmark
+
+                    each val, index in [1,2,3]
+                      a(href="#!").section-top-news__item.section-top-news__item--category-small
+                        .section-top-news__pic
+                          img(src="../images/demo.jpeg", alt="")
+                        .section-top-news__content
+                          .section-top-news__title What I learnt from  what you shouldn’t do as an applicant
+                          .section-top-news__author.d-flex.align-items-center
+                            span By Vie Rose
+                            span.dot
+                            span 3 hours ago
+                          .section-top-news__read
+                            span.d-inline-block.mr-4 3 min read
+                            span.d-inline-block.mr-4.section-top-news__icon.fa.fa-share-alt
+                            span.d-inline-block.section-top-news__icon.fa.fa-bookmark
+
+                  .section-category__block
+                    .section-category__title.d-flex.align-items-center
+                      .news-center__title.news-center__title--has-border.mr-4.mb-0 ECONOMIC
+                      span.section-category__down.dropdown
+                        span.fa.fa-angle-down.section-category__down-icon(id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        .section-category__dropdown.dropdown-menu.dropdown-menu(aria-labelledby="dLabel")
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Society
+                              span.fa.fa-check
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Entertainment
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Media
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Sports
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Politics
+
+                    a(href="#!").section-top-news__item.section-top-news__item--category-large
+                      .section-top-news__pic
+                        img(src="../images/demo.jpeg", alt="")
+                      .section-top-news__content
+                        .section-top-news__title What I learnt from  what you shouldn’t do as an applicant
+                        .section-top-news__desc I feel lucky. Being one of the editors at the UX Collective allows me to read tons of great stories every week, submitted by designers from...
+                        .section-top-news__author.d-flex.align-items-center
+                          span By Vie Rose
+                          span.dot
+                          span 3 hours ago
+                        .section-top-news__read
+                          span.d-inline-block.mr-4 3 min read
+                          span.d-inline-block.mr-4.section-top-news__icon.fa.fa-share-alt
+                          span.d-inline-block.section-top-news__icon.fa.fa-bookmark
+
+                    each val, index in [1,2,3]
+                      a(href="#!").section-top-news__item.section-top-news__item--category-small
+                        .section-top-news__pic
+                          img(src="../images/demo.jpeg", alt="")
+                        .section-top-news__content
+                          .section-top-news__title What I learnt from  what you shouldn’t do as an applicant
+                          .section-top-news__author.d-flex.align-items-center
+                            span By Vie Rose
+                            span.dot
+                            span 3 hours ago
+                          .section-top-news__read
+                            span.d-inline-block.mr-4 3 min read
+                            span.d-inline-block.mr-4.section-top-news__icon.fa.fa-share-alt
+                            span.d-inline-block.section-top-news__icon.fa.fa-bookmark
+
+                  .section-category__block
+                    .section-category__title.d-flex.align-items-center
+                      .news-center__title.news-center__title--has-border.mr-4.mb-0 EDUCATION
+                      span.section-category__down.dropdown
+                        span.fa.fa-angle-down.section-category__down-icon(id="dLabel" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                        .section-category__dropdown.dropdown-menu.dropdown-menu(aria-labelledby="dLabel")
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Society
+                              span.fa.fa-check
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Entertainment
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Media
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Sports
+                          a.section-category__dropdown-item(href="#!")
+                            .d-flex.align-items-center.justify-content-between
+                              span Politics
+
+                    a(href="#!").section-top-news__item.section-top-news__item--category-large
+                      .section-top-news__pic
+                        img(src="../images/demo.jpeg", alt="")
+                      .section-top-news__content
+                        .section-top-news__title What I learnt from  what you shouldn’t do as an applicant
+                        .section-top-news__desc I feel lucky. Being one of the editors at the UX Collective allows me to read tons of great stories every week, submitted by designers from...
+                        .section-top-news__author.d-flex.align-items-center
+                          span By Vie Rose
+                          span.dot
+                          span 3 hours ago
+                        .section-top-news__read
+                          span.d-inline-block.mr-4 3 min read
+                          span.d-inline-block.mr-4.section-top-news__icon.fa.fa-share-alt
+                          span.d-inline-block.section-top-news__icon.fa.fa-bookmark
+
+                    each val, index in [1,2,3]
+                      a(href="#!").section-top-news__item.section-top-news__item--category-small
+                        .section-top-news__pic
+                          img(src="../images/demo.jpeg", alt="")
+                        .section-top-news__content
+                          .section-top-news__title What I learnt from  what you shouldn’t do as an applicant
+                          .section-top-news__author.d-flex.align-items-center
+                            span By Vie Rose
+                            span.dot
+                            span 3 hours ago
+                          .section-top-news__read
+                            span.d-inline-block.mr-4 3 min read
+                            span.d-inline-block.mr-4.section-top-news__icon.fa.fa-share-alt
+                            span.d-inline-block.section-top-news__icon.fa.fa-bookmark
+        // LOADING
+        .d-flex.justify-content-center
+          .loading
+            .loading__content
+              .loading__title
+              .loading__title-media
+              .loading__title-small
+            .loading__img
+
+
+      // MODAL-SEARCHING
+      .modal.fade.searching-modal(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")
+        .modal-dialog(role="document")
+          .modal-content
+            .modal-header
+              button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+                span(aria-hidden="true").fa.fa-times
+
+            .modal-body
+              .searching-modal__search-wrapper
+                input.searching-modal__search-input(type="text", placeholder="Search for news")
+                span.searching-modal__search-icon.fa.fa-search
+  +footer()
